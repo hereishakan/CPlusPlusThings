@@ -1,393 +1,391 @@
-# C++ 那些事
+# C ++ Bu şeyler
 
-[English version is here](./README_EN.md)
-
-
-感谢各位对《C++ 那些事》的支持，现将内容也同步至网站，可以打开网站直接阅读~欢迎大家 star、转发、PR。
-
-因服务器到期，暂时关闭以下站点，请大家阅读仓库即可，感谢支持。
+[İngilizce versiyonu burada] (./README_EN.md )
 
 
-> ~~[直通点](https://light-city.club/sc/)~~
+"C ++ 'daki Bu Şeyler" için desteğiniz için teşekkür ederiz. İçerik artık web sitesiyle de senkronize ediliyor. Doğrudan okumak için web sitesini açabilirsiniz ~ Herkes yıldız, ileri ve halkla ilişkilere açıktır.
+
+Sunucunun sona ermesi nedeniyle, aşağıdaki siteler geçici olarak kapatılır. Lütfen depoyu okuyun. Desteğiniz için teşekkür ederim.
+
+
+>~~ [Geçiş noktası] (https://light-city .kulüp / sc /) ~~
 
 
 
-### 关于作者
+### Yazar hakkında
 
-公众号已开放两大入口，分别是专辑与菜单，可以直接在微信公众号上阅读《C++ 那些事》内容，配上该仓库的代码，将会非常的爽，建议大家关注一波。
+Genel hesap, albüm ve menü olmak üzere iki ana giriş açtı. "C ++ 'daki Bu Şeyler" içeriğini doğrudan WeChat genel hesabından okuyabilirsiniz. Deponun kodu ile çok havalı olacak. Herkesin bir dalgaya dikkat etmesi önerilir.
 
-个人公众号：guangcity; 联系方式： wechat: gcxzhang, 备注：来自github
+Kişisel genel hesap: guangcity; iletişim: WeChat: gcxzhang, açıklamalar: Github'dan
 
-![](img/wechat.jpg)
+![](ımg/WeChat.jpg)
 
-欢迎大家反馈及 C++ 交流，本人在微信创建了 C++ 那些事交流群，优质的 C++ 资源交流区，期待大家关注上面公众号，点击公众号右下角->联系我，拉你入群。
+Herkes geri bildirimde bulunabilir ve C ++ ile iletişim kurabilir. Yüksek kaliteli bir C ++ kaynak değişim alanı olan WeChat'te bir C ++ kaynak değişim grubu oluşturdum. Yukarıdaki genel hesaba dikkatinizi dört gözle bekliyorum. Genel hesabın sağ alt köşesine tıklayın-> Sizi gruba çekmek için benimle iletişime geçin.
 
 ---
 
 
-另外，下面是我自己建立的知识星球，会带大家做一些小项目以及源码解读等方面成长。
+Ayrıca, sizi bazı küçük projeler yapmaya götürecek ve kaynak kod yorumlama açısından büyüyecek olan kendi kurduğum Bilgi gezegeni aşağıdadır.
 
-![](https://www.hualigs.cn/image/60a24728bb736.jpg)
+![](https://www.hualigs.cn/image/60a24728bb736.jpg )
 
 
-### 项目运行
+### Proje çalışması
 
-- **代码环境**
+- ** Kod ortamı**
 
   Ubuntu 18.04
 
-- **编辑工具**
+- ** Düzenleme araçları**
 
-  CLion
+  KLion
 
-- **编译器**
+-**Derleyici**
 
 > gcc/g++
 
-尽量用 g++，因为一开始我用的 vim 写的，所以纯 g++，后来用编译器 CLion，部分有 CMakeLists.txt 文件，直接导入就行，后面会更新这个文件包含整个项目，持续关注~
+G ++ 'yı mümkün olduğunca kullanmaya çalışın, çünkü başlangıçta vim ile yazdım, bu yüzden saf g ++ idi ve daha sonra bazılarının CMAKELİSTLERİ olan derleyici clion'u kullandı.txt dosyası, sadece doğrudan içe aktarın, bu dosya daha sonra tüm projeyi içerecek şekilde güncellenecektir, dikkat etmeye devam edin ~
 
-### 0.项目概要
+### 0.Proje özeti
 
-- 中文名：**C++ 那些事**
-- 英文名：**Stories About C Plus Plus**
+-Çince adı: ** C ++ Bu şeyler**
+-İngilizce adı: ** C Plus Plus Hakkında Hikayeler**
 
-这是一个适合初学者从<u>**入门到进阶**</u>的仓库，解决了<u>**面试者与学习者**</u>想要<u>**深入 C++**</u> 及如何<u>**入坑 C++**</u> 的问题。除此之外，本仓库拓展了更加深入的源码分析，多线程并发等的知识，是一个比较全面的 C++ 学习从入门到进阶提升的仓库。
+Bu, <u>** girişten ileri **</u> 'ya yeni başlayanlar için uygun, <u>** görüşmecilerin ve öğrencilerin ** </u> istediği sorunu çözen bir depodur. <u> ** Derinlemesine C ++ ** </u> ve buna ek olarak, bu depo kaynak kodu analizi, çok iş parçacıklı eşzamanlılık vb. Hakkında daha derinlemesine bilgi genişletmiştir. ve girişten ileri iyileştirmeye kadar C ++ öğrenimi için daha kapsamlı bir depodur.
 
-### 1.基础进阶
+### 1.Temel gelişmiş
 
-- [`const` 那些事](./basic_content/const)
-- [`static` 那些事](./basic_content/static)
-- [`this` 那些事](./basic_content/this)
-- [`inline` 那些事](./basic_content/inline)
-- [`sizeof` 那些事](./basic_content/sizeof)
-- [函数指针那些事](./basic_content/func_pointer)
-- [纯虚函数和抽象类那些事](./basic_content/abstract)
-- [`vptr_vtable` 那些事](./basic_content/vptr_vtable)
-- [`virtual` 那些事](./basic_content/virtual)
-- [`volatile` 那些事](./basic_content/volatile)
-- [`assert` 那些事](./basic_content/assert)
-- [位域那些事](./basic_content/bit)
-- [`extern` 那些事](./basic_content/extern)
-- [`struct` 那些事](./basic_content/struct)
-- [`struct` 与 `class` 那些事](./basic_content/struct_class)
-- [`union` 那些事](./basic_content/union)
-- [`c` 实现 `c++` 多态那些事](./basic_content/c_poly)
-- [`explicit` 那些事](./basic_content/explicit)
-- [`friend` 那些事](./basic_content/friend)
-- [`using` 那些事](./basic_content/using)
-- [`::` 那些事](./basic_content/maohao)
-- [`enum` 那些事](./basic_content/enum)
-- [`decltype` 那些事](./basic_content/decltype)
-- [引用与指针那些事](./basic_content/pointer_refer)
-- [宏那些事](./basic_content/macro)
+- [bu şeylere devam et] (./basic_content/const)
+- ['statik' şeyler] (./basic_content/statik)
+-[bu şeyler] (./basic_content/bu)
+- ['satır içi' şeyler] (./basic_content/satır içi)
+- [bu şeylerin boyutu] (./basic_content/sizeof)
+-[İşlev işaretçileri ile ilgili şeyler] (./basıc_content/func_poınter)
+- [Saf sanal işlevler ve soyut sınıflar] (./basic_content/özet)
+-['vptr_vtable' bu şeyler] (./basic_content/vptr_vtable)
+- ['sanal' şeyler] (./basic_content/sanal)
+- ['Uçucu` ile ilgili şeyler] (./ basic_content/ değişken)
+- [bu şeyleri iddia et] (./basic_content/onayla)
+-[Etki alanındaki şeyler] (./basic_content/bit)
+- [bu şeylerin dışında] (./basic_content/harici)
+-[`Yapı' ile ilgili şeyler] (./basic_content/yapı)
+-["Yapı" ve "sınıf" ile ilgili şeyler] (./basic_content/yapı_sınıfı)
+-[`birlik' ile ilgili şeyler] (./ basic_content/ birlik)
+- ['c', 'c ++' polimorfizmini uygular] (./ temel içerik / c_poly)
+-['açık' şeyler] (./basic_content/ açık)
+-[`arkadaş` ile ilgili şeyler] (./ basic_content/arkadaş)
+- [bu şeyleri kullanmak] (./ basic_content/ kullanma)
+- ['::'bu şeyler] (./temel_içerik/maohao)
+- [bu şeyleri numaralandırın] (./basic_content/numaralandırma)
+- [bu şeyleri ekle](./basic_content/decltype)
+-[Referanslar ve işaretçiler] (./basıc_content/poınter_refer)
+-[Hong o şeyler] (./basic_content/makro)
 
-### 2.实战系列
+### 2.Gerçek savaş serisi
 
-#### 2.1 [10 日狂练](./practical_exercises/10_day_practice)
+####2.1 [10. uygulama] (./ pratik_egzersizler / 10_gün_uygulama)
 
-- [x] [day1](practical_exercises/10_day_practice/day1)
+- [x] [1. gün] (practical_exercises / 10_day_practice / 1. gün)
 
-基本 c++ 语法
+Temel c ++ sözdizimi
 
-- [x] [day2](practical_exercises/10_day_practice/day2)
+- [x] [2. gün] (practical_exercises / 10_day_practice / 2. gün)
 
-递归、结构体、枚举、静态变量等
+Özyineleme, yapı, numaralandırma, statik değişkenler vb.
 
-- [x] [day3](practical_exercises/10_day_practice/day3)
+- [x] [3. gün] (practical_exercises / 10_day_practice / 3. gün)
 
-函数
+işlev
 
-- [x] [day4](practical_exercises/10_day_practice/day4)
+- [x] [4. gün] (practical_exercises / 10_day_practice / 4. gün)
 
-函数深入
+Fonksiyon derinliği
 
-- [x] [day5](practical_exercises/10_day_practice/day5)
+- [x] [5. gün] (practical_exercises / 10_day_practice / 5. gün)
 
-继承多态
+Kalıtım polimorfizmi
 
-- [x] [day6](practical_exercises/10_day_practice/day6)
+- [x] [6. gün] (practical_exercises / 10_day_practice / 6. gün)
 
-虚函数、抽象类
+Sanal fonksiyonlar, soyut sınıflar
 
-- [x] [day7](practical_exercises/10_day_practice/day7)
+- [x] [7. gün] (practical_exercises / 10_day_practice / 7. gün)
 
-运算符重载
+Operatörün aşırı yüklenmesi
 
-- [x] [day8](practical_exercises/10_day_practice/day8)
+- [x] [8. gün] (practical_exercises / 10_day_practice / 8. gün)
 
-模板与 STL
+Şablon ve STL
 
-- [x] [day9](practical_exercises/10_day_practice/day9)
+- [x] [9. gün] (practical_exercises / 10_day_practice / 9. gün)
 
-异常
+anormal
 
-- [x] [day10](practical_exercises/10_day_practice/day10)
+- [x] [10. gün] (practical_exercises / 10_day_practice / 10. gün)
 
-文件与流
+Dosyalar ve akışlar
 
-#### 2.2 [重点实战练习](./practical_exercises/key_exercises/)
+####2.2 [Temel pratik alıştırmalar] (./ pratik_egzersizler / anahtar_egzersizler /)
 
-├── [中括号重载.cpp](./practical_exercises/key_exercises/中括号重载.cpp)
-├── [时钟++运算符重载.cpp](./practical_exercises/key_exercises/时钟++运算符重载.cpp)
-├── [运算符重载之强制转换.cpp](./practical_exercises/key_exercises/运算符重载之强制转换.cpp)
-└── [重载圆括号的时钟.cpp](./practical_exercises/key_exercises/重载圆括号的时钟.cpp)
+─── [Parantezler aşırı yüklenmiştir.cpp](./practical_exercises/ key_exercises / Braket aşırı yükü.cpp)
+─── [C ++ operatörünün aşırı yüklenmesi.cpp](./practical_exercises / key_exercises / C ++ operatörünün aşırı yüklenmesi.cpp)
+─── [Operatör aşırı yüklenmesinin zorunlu dönüşümü.cpp](./practical_exercises / key_exercises / Operatör aşırı yüklenmesinin zorunlu dönüşümü.cpp)
+─── [Aşırı yüklenmiş parantezli saat.cpp](./practical_exercises/ key_exercises / Saati parantezlerle aşırı yükleyin.cpp)
 
-├── [函数模板.cpp](./practical_exercises/key_exercises/函数模板.cpp)
+─── [işlev şablonu.cpp](./practical_exercises / key_exercises / işlev şablonu.cpp)
 
-├── [动态数组.cpp](./practical_exercises/key_exercises/动态数组.cpp)
+─── [dinamik dizi.cpp](./practical_exercises/key_exercises/dinamik dizi.cpp)
 
-├── [字典插入与查找.cpp](./practical_exercises/key_exercises/字典插入与查找.cpp)
+─── [Sözlük ekleme ve arama.cpp](./practical_exercises / key_exercises / Sözlük ekleme ve arama.cpp)
 
-├── [异常捕获.cpp](./practical_exercises/key_exercises/异常捕获.cpp)
+─── [İstisna yakalama.cpp](./practical_exercises/ key_exercises / İstisna yakalama.cpp)
 
-├── [类模板之栈.cpp](./practical_exercises/key_exercises/类模板之栈.cpp)
+─── [Sınıf şablonları yığını.cpp](./practical_exercises / key_exercises / Sınıf şablonları yığını.cpp)
 
-├── [类模板特化之数组.cpp](./practical_exercises/key_exercises/类模板特化之数组.cpp)
+─── [Sınıf şablonu uzmanlığı dizisi.cpp](./practical_exercises / key_exercises / Sınıf şablonu uzmanlığı dizisi.cpp)
 
-├── [继承与封装.cpp](./practical_exercises/key_exercises/继承与封装.cpp)
+─── [Kalıtım ve kapsülleme.cpp](./practical_exercises / key_exercises / Kalıtım ve kapsülleme.cpp)
 
-├── [读写文件综合题.cpp](./practical_exercises/key_exercises/读写文件综合题.cpp)
-├── [输入输出运算符重载.cpp](./practical_exercises/key_exercises/输入输出运算符重载.cpp)
-├── [输入输出重载.cpp](./practical_exercises/key_exercises/输入输出重载.cpp)
-├── [输出格式.cpp](./practical_exercises/key_exercises/输出格式.cpp)
+─── [Belgeleri okumak ve yazmak için kapsamlı sorular.cpp](./practical_exercises / key_exercises / Dosyaları okumak ve yazmak için kapsamlı sorular.cpp)
+─── [Giriş ve çıkış operatörünün aşırı yüklenmesi.cpp](./practical_exercises / key_exercises / Giriş ve çıkış operatörünün aşırı yüklenmesi.cpp)
+─── [Giriş ve çıkış aşırı yükü.cpp](./practical_exercises / key_exercises / Giriş ve çıkış aşırı yükü.cpp)
+─── [çıktı biçimi.cpp](./practical_exercises/ key_exercises / çıktı biçimi.cpp)
 
-### 3.[C++2.0 新特性](./c++2.0)
+### 3.[C ++ 2.0'ın yeni özellikleri] (./ c ++2.0)
 
-#### 3.0 概况
+#### 3.0 Genel Bakış
 
-C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
+C ++ 2.0, C ++ 11/14/17/20 dahil olmak üzere "modern C ++" anlamına gelen bir kısaltmadır.
 
-#### 3.1 [C++11 新特性](./c++2.0/c++11)
+#### 3.1 [C ++ 11'in yeni özellikleri] (./ c ++2.0/c++11)
 
-- [Variadic Templates](./c++2.0/c++11/variadic)
+- [Değişken Şablonlar](./ c ++ 2.0/c ++11/değişken)
 
-- Spaces in Template Expressions
+- Şablon İfadelerindeki Boşluklar
 
-  ```cpp
-  vector<list<int> > //ok in each C++ version
-  vector<list<int>> // before c++ 11 error error: ‘>>’ should be ‘> >’ within a nested template argument list,c++11后可以正常通过
+  "'cpp
+  vektör<list<int> > // her C++ sürümünde tamam
+  vektör < list <int>> // c ++ 11 hatasından önce hata: ‘>>' iç içe geçmiş bir şablon bağımsız değişken listesi içinde ‘>>’ olmalıdır, c ++ 11'den sonra normal olarak geçebilir
   ```
 
-- [nullptr and nullptr_t](./c++2.0/c++11/nullptr.cpp)
+- [nullptr ve nullptr_t](./c++2.0/c++11/nullptr.cpp)
 
-- [Automatic Type Deduction with auto](./c++2.0/c++11/auto.cpp)
+- [Otomatik ile Otomatik Tür Kesintisi] (./ c ++ 2.0/c ++ 11/otomatik.cpp)
 
-- [Uniform Initialization ](./c++2.0/c++11/uniform_initialization.cpp)
+- [Tekdüze Başlatma] (./ c ++ 2.0/c ++ 11/tekdüze_başlatma.cpp)
 
-- [initializer_list](./c++2.0/c++11/initializer.cpp)
+- [başlatıcı_ listesi](./ c ++ 2.0 / c ++ 11 / başlatıcı.cpp)
 
-- [explicit for ctors taking more than one argument](./c++2.0/c++11/explicit.cpp)
+- [birden fazla argüman alan ktorlar için açık] (./ c ++ 2.0/c ++ 11 /açık.cpp)
 
-- [range-based for statement](./c++2.0/c++11/auto.cpp)
+- [deyim için aralık tabanlı] (./ c ++ 2.0/c ++ 11/otomatik.cpp)
 
-  ```cpp
-  for(decl:col) {
-      statement
+  "'cpp
+  için(decl:sütun) {
+      açıklama
   }
   ```
 
-- [=default,=delete](./c++2.0/c++11/default_delete.cpp)
+- [= varsayılan, = sil] (./c++2.0/c++11/varsayılan_delete.cpp)
 
-  如果你自行定义了一个 `ctor`, 那么编译器就不会给你一个 `default ctor`
-  如果强制加上 `=default`, 就可以重新获得并使用 `default ctor`.
+  Kendiniz bir 'ctor' tanımlarsanız, derleyici size bir 'varsayılan ctor' vermez`
+  `=default' öğesinin eklenmesini zorlarsanız, 'default ctor' öğesini yeniden kazanabilir ve kullanabilirsiniz.
 
-- Alias(化名) Template (template typedef)
+-Takma ad (takma ad) Şablonu (şablon typedef)
 
-  - [alias.cpp](./c++2.0/c++11/alias.cpp)
-  - [template_template.cpp](./c++2.0/c++11/template_template.cpp)
+  - [takma ad.cpp](./ c ++ 2.0 / c ++ 11 / takma ad.cpp)
+  - [şablon_template.cpp](./ c++2.0/c++11/şablon_template.cpp)
 
-- [template template parameter](./c++2.0/template_template.cpp)
+- [şablon şablon parametresi] (./c++2.0/şablon_template.cpp)
 
-- [type alias](./c++2.0/c++11/type_alias.cpp)
+- [takma ad yazın] (./ c ++ 2.0 / c ++ 11/ tür_alyaları.cpp)
 
-- [noexcept](./c++2.0/c++11/noexcept.cpp)
+- [hariç](./ c ++ 2.0/ c ++ 11 / hariç.cpp)
 
-- [override](./c++2.0/c++11/override.cpp)
+- [geçersizleştirmek](./ c ++ 2.0/c++11/ geçersiz kıl.cpp)
 
-- [final](./c++2.0/c++11/final.cpp)
+- [son](./ c ++2.0/c ++11/son.cpp)
 
 - [decltype](./c++2.0/c++11/decltype.cpp)
 
-- [lambda](./c++2.0/c++11/lambda.cpp)
+- [lambda](./ c++2.0/c++11/lambda.cpp)
 
-- [Rvalue reference](./c++2.0/c++11/rvalue.cpp)
+- [Değer referansı] (./ c ++ 2.0/c ++ 11 /değer.cpp)
 
-- [move aware class](./c++2.0/c++11/move.cpp)
+- [bilinçli sınıfı taşı] (./ c ++2.0/c++11/taşı.cpp)
 
-- 容器-结构与分类
+-Konteyner-Yapı ve sınıflandırma
 
-  - (1) 序列式容器包括：`array`(C++2.0 新引入),`vector`,`deque`,`list`,`forward_list`(C++2.0 新引入)
-  - (2) 关联式容器包括：`set/multiset`,`map/multimap`
-  - (3) 无序容器(C++2.0 新引入,更换原先 `hash_xxx` 为 `unordered_xxx`)包括：`unordered_map/unordered_multimap,unordered_set/unordered_multiset`
+  - (1) Seri kapsayıcılar şunları içerir: `dizi` (C ++ 2.0'da yeni tanıtıldı), `vektör`, 'deque`, 'liste`, 'ileri_list` (C ++ 2.0'da yeni tanıtıldı)
+  - (2) İlişkisel kapsayıcılar arasında `set / multiset`, 'harita / multimap' bulunur`
+  - (3) Sırasız kaplar (C ++ 2.0'da yeni tanıtıldı, orijinal'hash_xxx'i 'unordered_xxx` ile değiştirin) şunları içerir` 'unordered_map / unordered_multimap, unordered_set / unordered_multiset`
 
-- [Hash Function](./c++2.0/c++11/hash.cpp)
+- [Karma İşlevi] (./ c ++ 2.0/ c ++ 11 / karma.cpp)
 
-- [tuple](./c++2.0/c++11/tuple.cpp)
+- [Demet](./ c ++ 2.0/c ++ 11/demet.cpp)
 
-  学习资料：https://www.bilibili.com/video/av51863195?from=search&seid=3610634846288253061
+  Eğitim materyalleri:https://www.bilibili.com/video/av51863195?from=search&seid=3610634846288253061
 
 #### 3.2 C++14/17/20
 
-待更新...
+Güncellenecek...
 
-### 4.设计模式
+### 4.Tasarım deseni
 
-- [单例模式](./design_pattern/singleton)
-- [生产消费者模式](./design_pattern/producer_consumer)
+-[Tekli mod](./desıgn_pattern/tekil)
+-[Üretim tüketici modeli] (./desıgn_pattern/producer_consumer)
 
-### 5. [STL 源码剖析](./src_analysis/stl)
+### 5. [STL kaynak kodu analizi] (./src_analiz/stl)
 
-**STL 源码剖析：gcc 4.9.1**
+** STL kaynak kodu analizi: gcc 4.9.1**
 
-- [array](./src_analysis/stl/array.md)
-- [deque](./src_analysis/stl/deque.md)
-- [queue and stack](./src_analysis/stl/queue_stack.md)
-- [list](./src_analysis/stl/list.md)
-- [vector](./src_analysis/stl/vector.md)
-- [typename](./src_analysis/stl/typename.md)
-- [traits](./src_analysis/stl/traits.md)
-- [iterator](./src_analysis/stl/iterator.md)
-- [谈谈 STL 设计之 EBO 优化](./src_analysis/stl/谈谈STL设计之EBO优化.md)
-- [rb_tree](./src_analysis/stl/rb_tree.md)
-- [set and multiset](set_multiset.md)
-- [map and multimap](./src_analysis/stl/map_multimap.md)
-- [hashtable](./src_analysis/stl/hashtable.md)
-- [myhashtable](./src_analysis/stl/myhashtable.md)
-- [unordered_map](./src_analysis/stl/unordered_map.md)
+- [dizi](./src_analiz/stl/dizi.md)
+- [deque](./src_analiz/stl/deque.md)
+- [sıra ve yığın] (./src_analysis/stl/queue_stack.md)
+- [liste](./src_analiz/stl/liste.md)
+- [vektör](./src_analiz/stl/vektör.md)
+- [türadı](./src_analiz/stl/türadı.md)
+- [özellikler] (./src_analiz/stl/özellikler.md)
+- [yineleyici](./src_analiz/stl/yineleyici.md)
+-[STL tasarımının EBO optimizasyonu hakkında konuşun] (./src_analysis/stl/stl'nin EBO optimizasyonu hakkında konuşun design.md )
+- [rb_tree](./src_analiz/stl/rb_tree.md)
+- [set ve çoklu küme](set_multiset.md )
+- [harita ve çoklu harita] (./src_analysis/stl/map_multimap.md)
+- [karma tablo](./src_analiz/stl/karma tablo.md)
+- [myhashtable](./src_analiz/stl/myhashtable.md)
+- [sıralanmamış harita] (./src_analiz/stl/sıralanmamış harita.md)
 
-### 6. [并发编程](./concurrency)
+### 6. [Eşzamanlı programlama] (./tutarlılık)
 
-#### 6.1 C++ Concurrency in Action
+#### 6.1 Eylemde C ++ Eşzamanlılığı
 
-- [第一章](./concurrency/concurrency_v1/chapter1)
-- [第二章](./concurrency/concurrency_v1/chapter2)
+-[Birinci Bölüm](./ eşzamanlılık / eşzamanlı_v1/bölüm1)
+-[Bölüm 2] (./ eşzamanlılık / eşzamanlı_v1/ bölüm2)
 
-学习资料：https://downdemo.gitbook.io/cpp-concurrency-in-action-2ed/
+Çalışma materyalleri: https://downdemo.gitbook.io/cpp-eşzamanlılık-eylemde-2ed/
 
-#### 6.2 多线程与多进程
+#### 6.2 Çok iş parçacıklı ve çok işlemli
 
-##### 6.2.1 Threading In C++
+##### 6.2.1 C ++ 'da İş Parçacığı Oluşturma
 
-- [介绍](./concurrency/Threading_In_CPlusPlus/1.thread)
-- [创建线程的五种类型](./concurrency/Threading_In_CPlusPlus/2.create_type)
-- [Join 与 Detachs](./concurrency/Threading_In_CPlusPlus/3.join_detach)
-- [mutex in C++ Threading](./concurrency/Threading_In_CPlusPlus/4.mutex)
+-[Giriş] (./eşzamanlılık/Threading_İn_CPlusPlus/1.konu)
+- [Oluşturulan beş tür iş parçacığı] (./eşzamanlılık/Threading_İn_CPlusPlus/2.create_type)
+-[Katılın ve Ayrılın](./eşzamanlılık/Threading_İn_CPlusPlus/3.joın_detach)
+- [C ++ iş parçacığında muteks] (./eşzamanlılık/Threading_İn_CPlusPlus/4.muteks)
 
-> 学习自：
+> Öğrenin：
 >
 > https://www.youtube.com/watch?v=eZ8yKZo-PGw&list=PLk6CEY9XxSIAeK-EAh3hB4fgNvYkYmghp&index=4
 
-### 7. [C++ 惯用法](./codingStyleIdioms)
+### 7. [C ++ deyimleri] (./ Kodlama Stilidiyomları)
 
-##### 你最喜欢的 c++ 编程风格惯用法是什么?
+##### C ++ programlama stili için en sevdiğiniz deyim nedir?
 
-- [1.类初始化列表](./codingStyleIdioms/1_classInitializers)
-- [2.枚举类替换命名空间](./codingStyleIdioms/2_enumclass_namespace)
-- [3.RAII (资源获取即初始化)](./codingStyleIdioms/3_RAII)
-- [4.copy and swap](./codingStyleIdioms/4_copy-swap)
-- [5.pImpl (指针指向具体实现)](./codingStyleIdioms/5_pImpl)
+- [1.Sınıf başlatma listesi] (./codingStyleIdioms/1_sınıf Başlatıcılar)
+- [2.Sınıfları numaralandır ad alanlarını değiştir] (./codingStyleIdioms/2_enumclass_namespace)
+- [3.RAII (kaynak edinimi başlatmadır)] (./codingStyleIdioms/3_RAII)
+- [4.kopyala ve değiştir](./codingStyleIdioms/4_ kopyala-değiştir)
+- [5.pİmpl (belirli uygulamaya işaretçi)] (./codingStyleIdioms/5_pImpl)
 
-### 8.学习课程
+### 8.Eğitim kursu
 
-#### 8.1 [极客时间《现代 C++ 实战 30 讲》](https://time.geekbang.org/channel/home)
+#### 8.1 [Geek Time "Modern C ++ Savaşı Üzerine 30 Ders"] (https://time.geekbang.org/channel/home )
 
-- [堆、栈、RAII：C++ 里该如何管理资源？](./learn_class/modern_C++_30/RAII)
-  - [堆](./learn_class/modern_++_30/RAII/heap.cpp)
-  - [栈](./learn_class/modern_C++_30/RAII/stack.cpp)
-  - [RAII](./learn_class/modern_C++_30/RAII/RAII.cpp)
-- [自己动手，实现 C++ 的智能指针](./learn_class/modern_C++_30/smart_ptr)
-  - [auto_ptr、scope_ptr](./learn_class/modern_C++_30/smart_ptr/auto_scope.cpp)
-  - [unique_ptr](./learn_class/modern_C++_30/smart_ptr/unique_ptr.cpp)
-  - [shared_ptr](./learn_class/modern_C++_30/smart_ptr/shared_ptr.cpp)
-- [右值和移动究竟解决了什么问题？](./learn_class/modern_C++_30/reference)
-  - [左值与右值](./learn_class/modern_C++_30/reference/reference.cpp)
-  - [延长声明周期](./learn_class/modern_C++_30/reference/lifetime.cpp)
-  - [引用折叠](./learn_class/modern_C++_30/reference/collapses.cpp)
-  - [完美转发](./learn_class/modern_C++_30/reference/forward.cpp)
-  - [不要返回本地变量的引用](./learn_class/modern_C++_30/reference/don'treturnReference.cpp)
-- [容器 1](./learn_class/modern_C++_30/container1)
-- [容器 2](./learn_class/modern_C++_30/container2)
-- [异常](./learn_class/modern_C++_30/exception)
-- [字面量、静态断言和成员函数说明符](./learn_class/modern_C++_30/literalAssert)
-- [是不是应该返回对象？](./learn_class/modern_C++_30/returnObj)
-- [编译期多态：泛型编程和模板入门](./learn_class/modern_C++_30/compilerpoly)
-- [译期能做些什么？一个完整的计算世界](./learn_class/modern_C++_30/compilercompute)
-- [SFINAE：不是错误的替换失败是怎么回事?](./learn_class/modern_C++_30/SFINAE)
-- [constexpr：一个常态的世界](./learn_class/modern_C++_30/constexpr)
-- [函数对象和 lambda：进入函数式编程](./learn_class/modern_C++_30/functionLambda)
-- [内存模型和 atomic：理解并发的复杂性](./learn_class/modern_C++_30/memorymodel_atomic)
+- [Yığın, yığın, RAII: C ++ 'da kaynaklar nasıl yönetilir?](./ öğrenme_sınıfı / modern_C++_30 / RAII)
+  -[yığın](./ learn_class/modern_++_30/RAII / yığın.cpp)
+  -[yığın] (./learn_class/modern_C++_30/RAII / yığın.cpp)
+  - [RAII](./ öğrenme_sınıfı/modern_C++_30/RAII/RAII.cpp)
+-[Kendin yap, C ++ akıllı işaretçileri uygula] (./ öğrenme_sınıfı / modern_C ++_30 / akıllı_ptr)
+  -[auto_ptr, scope_ptr](./ öğrenme_sınıfı / modern_C ++ _30 / akıllı_ptr / otomatik_ kapsam.cpp)
+  - [benzersiz_ptr](./ öğrenme_sınıfı / modern_C ++ _30 / akıllı_ptr / benzersiz_ptr.cpp)
+  - [paylaşım_ptr](./ öğrenme_sınıfı / modern_C ++ _30 / akıllı_ptr / paylaşım_ptr.cpp)
+- [Değer ve hareket hangi sorunu çözer?](./ öğrenme_sınıfı / modern_C ++ _30 / referans)
+  -[Değer ve değer] (./learn_class/modern_C++_30/ referans / referans.cpp)
+  -[Beyan süresini uzatın](./learn_class / modern_C ++ _30 / referans / ömür boyu.cpp)
+  -[Referans katlama] (./learn_class/modern_C++_30/ referans / çöker.cpp)
+  -[Mükemmel yönlendirme] (./ learn_class/ modern_C++ _30/ referans / ileri.cpp)
+  -[Yerel bir değişkene başvuru döndürmeyin] (./learn_class/ modern_C ++ _30 / referans / referansı geri çevirme.cpp)
+-[Konteyner 1] (./ öğrenme_sınıfı / modern_C ++ _30 / kapsayıcı1)
+-[Konteyner 2] (./ öğrenme_sınıfı / modern_C ++ _30 / kapsayıcı2)
+-[özel] (./learn_class /modern_C ++_30/ istisna)
+- [Değişmezler, statik iddialar ve üye işlev belirteçleri] (./ öğrenme_sınıfı /modern_C++ _30/değişmezsert)
+- Nesne iade edilmeli mi?](./ öğrenme_sınıfı / modern_C ++ _30 / Geri dönüşj)
+- [Derleme zamanı çok biçimliliği: Genel Programlama ve Şablonlarla Çalışmaya Başlama] (./ öğrenme_sınıfı /modern_C++_30 / derleyicipoli)
+-Çeviri dönemi ne yapabilir?Tam bir bilgi işlem dünyası] (./ öğrenme_sınıfı / modern_C ++ _30 / derleyicibilgi)
+- [SFİNUM: Hata olmayan değiştirme arızasına ne oldu?](./öğrenme_sınıfı/modern_C++_30/SFINAE)
+-[constexpr: Normal bir dünya] (./öğrenme_sınıfı/modern_C++_30/constexpr)
+- [İşlev Nesneleri ve lambda: İşlevsel Programlamaya Girin] (./öğrenme_sınıfı / modern_C ++ _30 / işlevlambda)
+- [Bellek Modeli ve atomik: Eşzamanlılığın Karmaşıklığını Anlamak] (./ öğrenme_sınıfı / modern_C ++ _30 / hafızamodel_atomik)
 
-### 9.工具篇
+### 9.Araçlar
 
-#### 9.1 [容器快捷输出工具](./tool/output)
+#### 9.1 [Konteyner Hızlı Çıktı Aracı] (./ araç / çıktı)
 
-对吴老师的代码进行了修改，[点击此处直通代码](./tool/output/output_container.h)
+Öğretmen Wu'nun kodu değiştirildi, [Koda erişmek için buraya tıklayın] (./ araç / çıktı / çıktı_konteyner.sa)
 
-输入：
+giriş：
 
-```cpp
-map<int, int> mp{
+"'cpp
+harita<int, int> mp{
             {1, 1},
             {2, 4},
             {3, 9}};
     cout << mp << endl;
 ```
 
-输出结果显示：
+Çıkış sonucu ekranı：
 
-```cpp
+"'cpp
 { 1 => 1, 2 => 4, 3 => 9 }
 ```
+  #### 9.2 Python gibi basit çıktı (Jupyter Notebook)
 
-#### 9.2 像 Python 一样简单输出（Jupyter Notebook）
+-[Python gibi C / C ++ oynayın] (./ araç / CC ++ gibi oynat Python.md )
 
-- [像 Python 一样玩 C/C++](./tool/像Python一样玩CC++.md)
+#### 9.3 Derleme sürecindeki değişiklikleri gözlemleyin
 
-#### 9.3 观察编译过程变化
+- [https://cppinsights.io ](https://cppinsights.io /)
 
--  [https://cppinsights.io](https://cppinsights.io/)
+#### 9.4 C ++ Hata ayıklama aracı dbg-makro
 
-#### 9.4 C++ 的 Debug 工具 dbg-macro
+-[C ++ Hata ayıklama aracı dbg-makro] (./ araç / C ++ Hata ayıklama aracı dbg-macro.md )
 
-- [C++ 的 Debug 工具 dbg-macro](./tool/C++的Debug工具dbg-macro.md)
+#### 9.5 Linux'ta hata ayıklama aracı rr - zamanda geriye gitme yeteneğine sahiptir
+-[Hata ayıklama için rr kullanın] (./ araç / rr için kullanın debugging.md )
 
-#### 9.5 在 Linux 上的 Debug 工具 rr - 拥有回到过去的能力
-- [用 rr 来进行 debug](./tool/用rr来进行debug.md)
+### 10.Genişleme kısmı
 
-### 10.拓展部分
+#### 10.1 Bazı sorular
 
-#### 10.1 一些问题
+- [C ++ 'da dize türü int türüne nasıl dönüştürülür?] (./uzantı/some_problem/dizgi_int.md)
 
-- [C++ 中如何将 string 类型转换为 int 类型？](./extension/some_problem/string_int.md)
-
-### 11.贡献者
-
+### 11.katılımcı
 
 
-| 贡献人  | 地址                          |
+
+/ Katılımcı | Adres /
 | ------- | ----------------------------- |
-| 光城    | https://github.com/Light-City |
-| ChungZH | https://github.com/ChungZH    |
-| xliu79  | https://github.com/xliu79     |
+/ Guangçeng | https://github.com/Light-City |
+/ Çungzh | https://github.com/ChungZH |
+/ xlıu79 | https://github.com/xliu79 |
 
 
 
-### 12.赞助我
+### 12.Bana sponsor ol
 
-如果觉得不错，赞助我吧~
+Bunun iyi olduğunu düşünüyorsanız, bana sponsor olun ~
 
-<table>
-  <tbody>
-    <tr>
-      <th align="center" style="height=200 width="200">
-          <img src="https://light-city.club/sc/assets/images/alipay.jpg" height="200" width="200" ><br>
-          支付宝
-      </th>
-      <th align="center" style="height=200 width="200">
-          <img src="https://light-city.club/sc/assets/images/wechat.png" height="200" width="200" ><br>
-          微信
-      </th>
-    </tr>
-  </tbody>
-</table>
-
+<Tablo>
+<tbody>
+<tr>
+<th align = "center" style ="yükseklik = 200 genişlik = "200">
+<img src="https://light-city .kulüp /sc /varlıklar / resimler /alipay.jpg " yükseklik = " 200" genişlik = "200" ><br>
+Alipay
+</th>
+<th align = "center" style ="yükseklik = 200 genişlik = "200">
+<img src="https://light-city .kulüp / sc / varlıklar / resimler / WeChat.png" yükseklik = " 200" genişlik = "200" ><br>
+WeChat
+</th>
+</tr>
+</tbody>
+</Tablo>
